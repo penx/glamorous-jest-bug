@@ -2,7 +2,6 @@
   "dependencies": {
     "glamor": "2.20.40",
     "glamorous": "4.12.1",
-    "govuk-react": "0.1.18",
     "jest": "23.0.0-alpha.0",
     "react": "16.2.0",
     "react-dom": "16.2.0"
