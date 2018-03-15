@@ -1,14 +1,14 @@
 import glamorous from "glamorous";
 import React from "react";
 
-var One = glamorous.div(({
+var InnerOne = glamorous.div(({
   color: '#F00'
 }));
 
-const Two = props => <One {...props} />;
+const InnerTwo = props => <InnerOne {...props} />;
 
-const Input = glamorous(Two)(({ color }) => ({
+const Example = glamorous(InnerTwo)(({ color }) => ({
   color: color ? color : undefined
 }));
 
-export default Input;
+export default Example;
