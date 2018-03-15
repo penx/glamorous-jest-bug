@@ -1,12 +1,10 @@
 import glamorous from "glamorous";
 import React from "react";
 
-import { Input as GovukInput } from "govuk-react";
+import { Input as MyInput } from "govuk-react";
 
-const GInput = glamorous(GovukInput)(({ error, warning }) => ({
-  border: warning && !error ? `4px solid #0F0` : undefined
+const Input = glamorous(MyInput)(({ color }) => ({
+  border: color ? `4px solid ${color}` : undefined
 }));
-
-const Input = props => <GInput {...props} />;
 
 export default Input;
