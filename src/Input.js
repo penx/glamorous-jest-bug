@@ -1,10 +1,14 @@
 import glamorous from "glamorous";
 import React from "react";
 
-import { Input as MyInput } from "govuk-react";
+var One = glamorous.div(({
+  color: '#F00'
+}));
 
-const Input = glamorous(MyInput)(({ color }) => ({
-  border: color ? `4px solid ${color}` : undefined
+const Two = props => <One {...props} />;
+
+const Input = glamorous(Two)(({ color }) => ({
+  color: color ? color : undefined
 }));
 
 export default Input;
