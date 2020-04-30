@@ -4,7 +4,8 @@
     "glamorous": "4.12.1",
     "jest": "23.0.0-alpha.0",
     "react": "16.2.0",
-    "react-dom": "16.2.0"
+    "react-dom": "16.2.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "babel": "^6.23.0",
@@ -12,11 +13,14 @@
     "babel-preset-react": "^6.24.1"
   },
   "scripts": {
-    "test": "jest --env=jsdom"
+    "test": "jest --env=jsdom",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "jest": {
     "testMatch": [
       "<rootDir>/src/**/?(*.)(spec|test).js?(x)"
     ]
-  }
+  },
+  "snyk": true
 }
